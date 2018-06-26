@@ -4,5 +4,5 @@
 <b>instalar o template webpack-simple, criando pasta alurapic</b><br>
 *vue init webpack-simple alurapic*<br>
 <b>instalar dependencias do package.json</b><br>
-```<blockquote>```npm install
+```npm install```
 
