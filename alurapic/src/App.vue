@@ -18,8 +18,7 @@
     </ul>
     <h1>{{ titulo }}</h1>
       <ul>
-        <li><img :src="foto1.url" :alt="foto1.title"></li>
-        <li><img :src="foto2.url" :alt="foto2.title"/></li>
+        <li v-for="foto of fotos"><img :src="foto.url" :alt="foto.title"></li>
       </ul>
 
   </div>
@@ -30,16 +29,18 @@ export default {
   data (){
     return{
       titulo: 'AluraPic',
-      foto1: {
-        url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
-        title: 'Cachorro1'
-      },
-      foto2:{
-        url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
-        title: 'Cachorro2'
+      fotos :[
+        {
+          url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
+          title: 'Cachorro1'
+        },
+        {
+          url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
+          title: 'Cachorro2'
+        }
+      ]
       }
     }
-  }
 }
 </script>
 
