@@ -17,9 +17,11 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
     <h1>{{ titulo }}</h1>
-    <img v-bind:src="foto.url" v-bind:alt="foto.title">
-    <h2>{{ titulo }}</h2>
-    <button type="image" v-bind:src="endereco" name="button"></button>
+      <ul>
+        <li><img :src="foto1.url" :alt="foto1.title"></li>
+        <li><img :src="foto2.url" :alt="foto2.title"/></li>
+      </ul>
+
   </div>
 </template>
 
@@ -28,11 +30,14 @@ export default {
   data (){
     return{
       titulo: 'AluraPic',
-      foto: {
+      foto1: {
         url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
-        title: 'Cachorro'
+        title: 'Cachorro1'
       },
-      endereco: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It'
+      foto2:{
+        url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
+        title: 'Cachorro2'
+      }
     }
   }
 }
