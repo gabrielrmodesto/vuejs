@@ -16,15 +16,23 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <h1>{{ titulo }}</h1>
+    <img v-bind:src="foto.url" v-bind:alt="foto.title">
+    <h2>{{ titulo }}</h2>
+    <button type="image" v-bind:src="endereco" name="button"></button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  data (){
+    return{
+      titulo: 'AluraPic',
+      foto: {
+        url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
+        title: 'Cachorro'
+      },
+      endereco: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It'
     }
   }
 }
