@@ -18,3 +18,15 @@ npm install
 ```
 npm run dev
 ```
+>Modulo VueResource
+```
+npm install vue-resource@1.0.3 --save
+
+#no main.js
+
+#importar modulo vueresource
+import VueResource from 'vue-resource'
+
+#registro do modulo no global view
+Vue.use(VueResource)
+```
