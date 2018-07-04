@@ -18,7 +18,7 @@
     </ul>
     <h1>{{ titulo }}</h1>
       <ul>
-        <li v-for="foto of fotos"><img :src="foto.url" :alt="foto.title"></li>
+        <li v-for="foto in fotos"><img :src="foto.url" :alt="foto.title"></li>
       </ul>
 
   </div>
